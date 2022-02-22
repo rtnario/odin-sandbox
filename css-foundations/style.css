@@ -1,0 +1,89 @@
+/* universal selector */
+* {
+    background-color: antiquewhite;
+    color: purple;
+}
+
+/* type selector */
+p {
+    color: green;
+}
+
+/* class selector */
+.classy-text {
+    color: red;
+}
+
+/* chaining selectors */
+.classy-text.classy-for-real {
+    color: blue;
+}
+
+/* grouping selector */
+h1, p {
+    border: 2px solid gray;
+}
+
+/* descendant combinator */
+.ancestor .contents {
+    color: black;
+}
+
+/* to create div block, height is mandatory but will span width unless specified */
+.div-block {
+    height: 50px;
+    width: 50px;
+}
+
+/* red green blue */
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+/* red green blue alpha */
+.red-a {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* hexadecimal */
+.blue {
+    background-color: #0000ff;
+}
+
+/* hexadecimal transparency */
+.blue-a {
+    background-color: #0000ff80;
+}
+
+/* hue saturation lightness */
+.yellow {
+    background-color: hsl(60, 100%, 50%);
+}
+
+/* hue saturation lightness alpha */
+.yellow-a {
+    background-color: hsla(60, 100%, 50%, 0.5);
+}
+
+.custom-font {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.custom-font-size {
+    font-size: larger;
+}
+
+.custom-font-weight {
+    font-weight: bolder;
+}
+
+.custom-font-align {
+    text-align: right;
+}
+
+/* height set to auto as to not modify its proportions/aspect ratio */
+/* tip: always explicitly state these values to "reserve space" for them on the site */
+img {
+    height: auto;
+    width: 300px;
+}
